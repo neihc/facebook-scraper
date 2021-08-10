@@ -53,7 +53,7 @@ class PostExtractor:
     )
     comments_regex = re.compile(r'([\d,.KM]+)\s+comment', re.IGNORECASE)
     shares_regex = re.compile(r'([\d,.KM]+)\s+Share', re.IGNORECASE)
-    live_regex = re.compile(r'.+(is live).+')
+    live_regex = re.compile(r'.+(was live).+')
     link_regex = re.compile(r"href=\"https:\/\/lm\.facebook\.com\/l\.php\?u=(.+?)\&amp;h=")
 
     photo_link = re.compile(r'href=\"(/[^\"]+/photos/[^\"]+?)\"')
